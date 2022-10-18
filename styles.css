@@ -10,9 +10,60 @@ h1, h2, h3{
 }
 
 p{
-    font-family: 'Playfair Display', serif;
+    font-family: 'Lora', serif;
 }
 
 h4{
     font-family: 'Work Sans', sans-serif;
+}
+
+body{
+    padding: 0px 30px;
+    box-sizing: border-box;
+}
+
+/*      HEADER      */
+nav{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    margin: 20px 0px 20px 0px;
+}
+
+.nav1{
+    display: flex;
+    justify-content: flex-start;
+}
+
+.nav2{
+    justify-content: center;
+}
+
+.nav3{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.nav-text{
+    padding: 0px 20px 0px 20px;
+    font-size: 12px;
+}
+
+.nav-logo{
+    width: 130px;
+}
+
+/*      IMAGEN DE INICIO        */
+.img-inicio{
+    position: relative;
+    display: inline-block;
+    width: 100%;
+}
+
+.img-inicio1{
+    width: 100%;
+}
+
+.text-inicio{
+    position: absolute;
 }
