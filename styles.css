@@ -24,6 +24,7 @@ body{
 
 /*      HEADER      */
 nav{
+    position: relative;
     display: flex;
     justify-content:space-between;
     align-items: center;
@@ -35,8 +36,10 @@ nav{
     justify-content: flex-start;
 }
 
-.nav2{
-    justify-content: center;
+.nav-logo{
+    position: absolute;
+    left:calc(50% - 65px);
+    width: 130px;
 }
 
 .nav3{
@@ -49,9 +52,6 @@ nav{
     font-size: 12px;
 }
 
-.nav-logo{
-    width: 130px;
-}
 
 /*      IMAGEN DE INICIO        */
 .img-inicio{
