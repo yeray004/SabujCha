@@ -48,6 +48,7 @@ nav{
 .nav3{
     display: flex;
     justify-content: flex-end;
+    align-items: center;
 }
 
 .nav-text{
@@ -55,6 +56,60 @@ nav{
     font-size: 12px;
 }
 
+.nav-menu{
+    background: none;
+    border: 1px solid;
+    font-size: 25px;
+    padding: 2px 5px 1px 5px;
+
+    display: none;
+}
+
+.fa-solid1{
+font-size: 15px;
+margin: 0px 5px;
+}
+
+.icon1{
+    font-size: 10px;
+}
+
+@media (max-width:1000px){
+    .nav1{
+        display: flex;
+        justify-content: flex-start;
+        display: none;
+    }
+    
+    .nav-logo{
+        position: absolute;
+        display: flex;
+        left: 10px;
+        width: 100px;
+    }
+    
+    .nav3{
+        display: flex;
+        justify-content: flex-end;
+    }
+    
+    .nav-text{
+        position: absolute;
+        right: 50px;
+        top: 1px;
+        padding: 0px 15px 0px 15px;
+        margin: 8px 0px;
+        font-size: 10px;
+    }
+    
+    .nav-menu{
+        background: none;
+        border: 1px solid;
+        font-size: 25px;
+        padding: 2px 5px 1px 5px;
+        display: block;
+    }
+}
 
 /*      IMAGEN DE INICIO        */
 .contenedor-inicio{
@@ -117,7 +172,7 @@ margin: 5%;
 }
 
 .p-desc{
-    font-size: 2rem;
+    font-size: clamp(1.5rem,2vw,2rem);
     color:#529F0F;
     padding: 0%;
     margin: 0%;
@@ -149,7 +204,7 @@ margin: 5%;
 }
 
 .lat-1{
-    width: 30%;
+    width: 50%;
     text-align: center;
 }
 
@@ -205,34 +260,67 @@ margin: 5%;
     padding: 3% 0px;
 }
 
+.product-name{
+    color: #575757;
+}
+
+.product-description-name{
+    color: #333333;
+}
+
+s{
+    color: #575757;
+}
+
 /*      JOIN US     */
 .join-us{
     background: url("imagenes/bg-2.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     position: relative;
-/*     width: fit-content; */
-    justify-content: center;
-    padding: 7%;
+    padding: 7% 4%;
     margin: auto;
 }
 
-/* .join-us-img{
-    position: relative;
-    width: 100%;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
- */
 .join-text{
-    font-size: clamp(.5rem,2.3vw,2rem);
-    text-align: center;
+    font-size: clamp(1.4rem,2.3vw,2rem);
+    text-align: center;/* 
+    margin: 3% 0px; */
+}
+
+.join-ul{
+    list-style: none;
+    padding: 0%;
+}
+
+.join-li{
+    display: flex;
+    justify-content: center;
+}
+
+.join-li-1{
+    font-family: 'Lora','serif';
+    font-size: 12px;
+    padding: 20px 15% 20px 15px;
+    border: #cecece solid 1px;
+    background: none;
+}
+
+.join-button{
+    background-color: #000;
+    font-family: 'Work Sans', sans-serif;
+    font-size: 11px;
+    font-weight: 500;
+    color: #ffff;
+    border: 0px;
+    padding: 15px 3%;
 }
 
 /*      LATEST NEWS     */
 .h1-news{
     text-decoration: underline 2px;
-    font-size: clamp(1.4rem,2vw,2rem);
+    font-size: clamp(1.4rem,3vw,2rem);
+    text-align: center;
 }
 
 .lat-2-2{
@@ -260,7 +348,9 @@ margin: 5%;
 
 .news-more{
     color: #333333;
-    text-decoration: underline;font-size: 14px;
+    text-decoration: underline;
+    font-size: 12px;
+    margin-top: 30px;
 }
 
 .news-img{
@@ -277,6 +367,8 @@ margin: 5%;
     flex-wrap: wrap;
     list-style: none;
     justify-content: space-evenly;
+    margin: 0%;
+    padding: 0%;
 }
 
 /*      LISTAS      */
@@ -286,23 +378,26 @@ margin: 5%;
     justify-content: space-evenly;
     flex-wrap: wrap;
     background-color: #f8f8f8;
-    padding: 4% 0%;
+    padding: 4% 0px;
 }
 
 .lista1{
     list-style: none;
+    padding: 0%;
+    margin-right: 50px;
 }
 
 .title-list{
     color: #333333;
     font-family: 'Playfair Display', serif;
     font-weight: 400;
-    font-size: 25px;
+    font-size: 20px;
 }
 
 .text-list{
     color: #575757;
     font-family: 'Lora', serif;
+    font-size: 13px;
     margin-top: 20px;
 }
 
@@ -322,4 +417,25 @@ margin: 5%;
     color: #575757;
     font-family: 'Lora', serif;
     margin-top: 40px;
+}
+
+/*      FOOTER      */  
+.footer-cont{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #ebebeb;
+    padding: 0px;
+}
+
+.footer-p{
+    font-size: clamp(.66rem,1vw,1rem);
+}
+
+.footer-img{
+    width: 100%;
+    max-width: 250px;
+    margin: 0%;
+    padding: 0%;
 }
